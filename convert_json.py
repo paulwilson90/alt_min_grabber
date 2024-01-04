@@ -20,4 +20,5 @@ for line in lines:
 
 # Create the final data dictionary
 data = destinations_data
-print(data)
+with open("alternate_json.json", "w") as a:
+    a.write(json.dumps(data))
